@@ -1,0 +1,7 @@
+|CODE_3_INPUT
+D[2] => Mux0.IN5
+D[1] => ~NO_FANOUT~
+D[0] => Mux0.IN4
+Y <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
