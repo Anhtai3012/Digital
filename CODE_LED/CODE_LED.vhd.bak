@@ -1,0 +1,28 @@
+library ieee;
+entity CODE_LED is
+port(
+	A,B,C,D : in std_logic;
+		a,b,c,d,e,f,g : out std_logic
+);
+end CODE_LED;
+architecture demo of CODE_LED is
+SIGNAL_input : std_logic_vector(3 downto 0)
+SIGNAL_outputs : std_logic_vector(6 downto 0)
+begin
+input(3) <= A;
+input(2) <= B;
+input(1) <= C;
+input(0) <= D;
+With input select 
+outputs <= "0000001" when "0000",
+"1001111" when "1000",
+"0010010" when "0100",
+"0000110" when "1100",
+"1001100" when "0010",
+"0100100" when "1010",
+"0100000" when "0110",
+"0001111" when "1110",
+"0000000" when "0001",
+"0000100" when "1001",
+"0000000" when others ;
+end demo;
