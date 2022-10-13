@@ -1,0 +1,21 @@
+library ieee;
+entity seven_segment is
+port(
+	I: in integer range 0 to 15;
+	O: out bit_vector(0 to 6)
+);
+end seven_segment;
+architecture demo of seven_segment is
+begin
+with I select 
+O <= "1001111" when 1,
+"0010010" when 2,
+"0000110" when 3,
+"1001100" when 4,
+"0100110" when 5,
+"0100000" when 6,
+"0001111" when 7,
+"0000000" when 8,
+"0000100" when 9,
+"0000001" when others;
+end demo ;
